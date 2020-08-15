@@ -1,0 +1,942 @@
+# Compile of VGA VSYNC V3.sv was successful.
+# Compile of VGA_Display_Module.v was successful.
+# Compile of VGA_ROM_Module.v was successful.
+# Compile of VGA_ROM_Module_bb.v was successful.
+# Compile of x2 Clock Divider.sv was successful.
+# Compile of NES Controller Module.sv was successful.
+# Compile of NES Reader.sv was successful.
+# Compile of RGB Generator.sv was successful.
+# Compile of Single 7 Segment Display Module.sv was successful.
+# Compile of Single 7 Segment Display.sv failed with 9 errors.
+# Compile of VGA H Display V2.sv was successful.
+# Compile of VGA HSYNC V3.sv was successful.
+# Compile of VGA RGB Decoder.sv was successful.
+# Compile of VGA SNES Button Decoder.sv was successful.
+# Compile of VGA SNES Movement Decoder.sv was successful.
+# Compile of VGA Sprite Memory Processor.sv was successful.
+# Compile of VGA V Display V2.sv was successful.
+# 17 compiles, 1 failed with 9 errors.
+vsim -gui work.VGA_Display_Module
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:06:54 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# ** Error: (vsim-3033) O:/ECE 271/Final Project Group 3/VGA_Display_Module.v(88): Instantiation of 'VGA_SYNC_Module' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /VGA_Display_Module File: O:/ECE 271/Final Project Group 3/VGA_Display_Module.v
+#         Searched libraries:
+#             O:/ECE 271/Final Project Group 3/work
+# Loading sv_std.std
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+# Error loading design
+# End time: 22:06:54 on Aug 14,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of VGA VSYNC V3.sv was successful.
+# Compile of VGA_Display_Module.v was successful.
+# Compile of VGA_ROM_Module.v was successful.
+# Compile of VGA_ROM_Module_bb.v was successful.
+# Compile of x2 Clock Divider.sv was successful.
+# Compile of NES Controller Module.sv was successful.
+# Compile of NES Reader.sv was successful.
+# Compile of RGB Generator.sv was successful.
+# Compile of Single 7 Segment Display Module.sv was successful.
+# Compile of Single 7 Segment Display.sv failed with 9 errors.
+# Compile of VGA H Display V2.sv was successful.
+# Compile of VGA HSYNC V3.sv was successful.
+# Compile of VGA RGB Decoder.sv was successful.
+# Compile of VGA SNES Button Decoder.sv was successful.
+# Compile of VGA SNES Movement Decoder.sv was successful.
+# Compile of VGA Sprite Memory Processor.sv was successful.
+# Compile of VGA V Display V2.sv was successful.
+# Compile of VGA_SYNC_Module.v was successful.
+# 18 compiles, 1 failed with 9 errors.
+vsim -gui work.VGA_Display_Module
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:08:01 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# Loading work.VGA_SYNC_Module
+# Loading sv_std.std
+# Loading work.HSYNC
+# Loading work.VSYNC
+# Loading work.H_Display
+# Loading work.V_Display
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+add wave *
+run 100ps
+force -freeze sim:/VGA_Display_Module/reset_n 1 0
+force -freeze sim:/VGA_Display_Module/clk 1 0, 0 {50 ps} -r 100
+run 100ps
+run 100 ps
+force -freeze sim:/VGA_Display_Module/reset_n 0 0
+run 100ps
+run 100 ps
+quit -sim
+# End time: 22:11:18 on Aug 14,2020, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 0
+quit -sim
+vsim -gui work.VGA_Display_Module
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:11:45 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# Loading work.VGA_SYNC_Module
+# Loading sv_std.std
+# Loading work.HSYNC
+# Loading work.VSYNC
+# Loading work.H_Display
+# Loading work.V_Display
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+add wave *
+force -freeze sim:/VGA_Display_Module/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_Display_Module/reset_n 1 0
+run 100ps
+force -freeze sim:/VGA_Display_Module/reset_n 0 0
+run 100ms
+force -freeze sim:/VGA_Display_Module/A 0 0
+quit -sim
+vsim -gui work.VGA_Display_Module
+# End time: 22:14:45 on Aug 14,2020, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:14:45 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# Loading work.VGA_SYNC_Module
+# Loading sv_std.std
+# Loading work.HSYNC
+# Loading work.VSYNC
+# Loading work.H_Display
+# Loading work.V_Display
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+add wave *
+force -freeze sim:/VGA_Display_Module/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_Display_Module/reset_n 1 0
+force -freeze sim:/VGA_Display_Module/A 0 0
+force -freeze sim:/VGA_Display_Module/B 0 0
+force -freeze sim:/VGA_Display_Module/X 0 0
+force -freeze sim:/VGA_Display_Module/Y 0 0
+force -freeze sim:/VGA_Display_Module/Select 0 0
+force -freeze sim:/VGA_Display_Module/Start 0 0
+force -freeze sim:/VGA_Display_Module/Up 0 0
+force -freeze sim:/VGA_Display_Module/Down 0 0
+force -freeze sim:/VGA_Display_Module/Left 0 0
+force -freeze sim:/VGA_Display_Module/Right 0 0
+run 100ps
+force -freeze sim:/VGA_Display_Module/reset_n 0 0
+run 1us
+quit -sim
+vsim -gui work.VGA_Display_Module
+# End time: 22:15:36 on Aug 14,2020, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:15:36 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# Loading work.VGA_SYNC_Module
+# Loading sv_std.std
+# Loading work.HSYNC
+# Loading work.VSYNC
+# Loading work.H_Display
+# Loading work.V_Display
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+add wave *
+force -freeze sim:/VGA_Display_Module/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_Display_Module/reset_n 1 0
+force -freeze sim:/VGA_Display_Module/A 0 0
+force -freeze sim:/VGA_Display_Module/B 0 0
+force -freeze sim:/VGA_Display_Module/X 0 0
+force -freeze sim:/VGA_Display_Module/Y 0 0
+force -freeze sim:/VGA_Display_Module/Select 0 0
+force -freeze sim:/VGA_Display_Module/Start 0 0
+force -freeze sim:/VGA_Display_Module/Up 0 0
+force -freeze sim:/VGA_Display_Module/Down 0 0
+force -freeze sim:/VGA_Display_Module/Left 0 0
+force -freeze sim:/VGA_Display_Module/Right 0 0
+run 100ps
+force -freeze sim:/VGA_Display_Module/reset_n 0 0
+run 1ms
+run 10ms
+quit -sim
+vsim -gui work.VGA_Display_Module
+# End time: 22:17:59 on Aug 14,2020, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0
+# vsim -gui work.VGA_Display_Module 
+# Start time: 22:17:59 on Aug 14,2020
+# Loading work.VGA_Display_Module
+# Loading work.VGA_SYNC_Module
+# Loading sv_std.std
+# Loading work.HSYNC
+# Loading work.VSYNC
+# Loading work.H_Display
+# Loading work.V_Display
+# Loading work.VGA_SNES_Movement_Decoder
+# Loading work.VGA_SNES_Button_Decoder
+# Loading work.x2_Clock_Divider
+# Loading work.VGA_Sprite_Memory_Processor
+# Loading work.VGA_ROM_Module
+# Loading work.RGB_Generator
+add wave *
+force -freeze sim:/VGA_Display_Module/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_Display_Module/reset_n 0 0
+force -freeze sim:/VGA_Display_Module/A 0 0
+force -freeze sim:/VGA_Display_Module/B 0 0
+force -freeze sim:/VGA_Display_Module/X 0 0
+force -freeze sim:/VGA_Display_Module/Y 0 0
+force -freeze sim:/VGA_Display_Module/Select 0 0
+force -freeze sim:/VGA_Display_Module/Start 0 0
+force -freeze sim:/VGA_Display_Module/Up 0 0
+force -freeze sim:/VGA_Display_Module/Down 0 0
+force -freeze sim:/VGA_Display_Module/Left 0 0
+force -freeze sim:/VGA_Display_Module/Right 0 0
+run 100ps
+force -freeze sim:/VGA_Display_Module/reset_n 1 0
+run 1ms
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 28800 ps.
+quit sim
+# unknown switch: sim
+quit -sim
+# End time: 22:44:05 on Aug 14,2020, Elapsed time: 0:26:06
+# Errors: 2, Warnings: 0
+quit -sim
+vsim work.V_Display
+# vsim work.V_Display 
+# Start time: 22:44:08 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.V_Display
+add wave *
+force -freeze sim:/V_Display/VSYNC 1 0
+force -freeze sim:/V_Display/V_Counts 0 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000000111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000001111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000010111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000011111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100010 0
+run 100ps
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 3400 ps.
+force -freeze sim:/V_Display/V_Counts 0000100011 0
+run 100ps
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 3400 ps.
+force -freeze sim:/V_Display/V_Counts 0000100100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000100111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000101111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000110111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111000 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111001 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111010 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111011 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111100 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111101 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111110 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0000111111 0
+run 100ps
+force -freeze sim:/V_Display/V_Counts 0001000000 0
+run 100ps
+quit -sim
+# End time: 22:56:36 on Aug 14,2020, Elapsed time: 0:12:28
+# Errors: 2, Warnings: 0
+quit -sim
+vsim -gui work.SNES_VGA_Button_Decoder
+# vsim -gui work.SNES_VGA_Button_Decoder 
+# Start time: 22:58:22 on Aug 14,2020
+# ** Error: (vsim-3170) Could not find 'SNES_VGA_Button_Decoder'.
+#         Searched libraries:
+#             O:/ECE 271/Final Project Group 3/work
+# Error loading design
+add wave *
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# End time: 22:58:23 on Aug 14,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+force -freeze sim:/SNES_VGA_Button_Decoder/Select 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Start 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/A 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/B 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/X 1 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+force -freeze sim:/SNES_VGA_Button_Decoder/Y 0 0
+# Error while executing: force
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+run 1ms
+# No Design Loaded!
+vsim work.VGA_SNES_Button_Decoder
+# vsim work.VGA_SNES_Button_Decoder 
+# Start time: 22:58:48 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_SNES_Button_Decoder
+end -sim
+# bad option "-sim": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+quit -sim
+# End time: 22:59:51 on Aug 14,2020, Elapsed time: 0:01:03
+# Errors: 1, Warnings: 0
+quit -sim
+vsim -gui work.VGA_SNES_Button_Decoder
+# vsim -gui work.VGA_SNES_Button_Decoder 
+# Start time: 22:59:53 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_SNES_Button_Decoder
+add wave *
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 0 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 0 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 0 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 0 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 0 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Button_Decoder/Select 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Start 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/A 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/B 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/X 1 0
+force -freeze sim:/VGA_SNES_Button_Decoder/Y 0 0
+run 1ms
+quit -sim
+# End time: 23:02:21 on Aug 14,2020, Elapsed time: 0:02:28
+# Errors: 0, Warnings: 0
+vsim -gui work.VGA_SNES_Movement_Decoder
+# vsim -gui work.VGA_SNES_Movement_Decoder 
+# Start time: 23:02:38 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_SNES_Movement_Decoder
+quit -sim
+vsim -gui work.VGA_SNES_Movement_Decoder
+# End time: 23:03:02 on Aug 14,2020, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
+# vsim -gui work.VGA_SNES_Movement_Decoder 
+# Start time: 23:03:03 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_SNES_Movement_Decoder
+add wave *
+force -freeze sim:/VGA_SNES_Movement_Decoder/Up 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Down 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Left 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Right 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Col 0000000000 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Row 0000000000 0
+run 1ms
+force -freeze sim:/VGA_SNES_Movement_Decoder/Up 0 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Down 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Left 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Right 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Movement_Decoder/Up 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Down 0 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Left 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Right 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Movement_Decoder/Up 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Down 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Left 0 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Right 1 0
+run 1ms
+force -freeze sim:/VGA_SNES_Movement_Decoder/Up 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Down 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Left 1 0
+force -freeze sim:/VGA_SNES_Movement_Decoder/Right 0 0
+run 1ms
+quit -sim
+vsim work.RGB_Generator
+# End time: 23:05:49 on Aug 14,2020, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 0
+# vsim work.RGB_Generator 
+# Start time: 23:05:49 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.RGB_Generator
+add wave *
+force -freeze sim:/RGB_Generator/GND 0 0
+force -freeze sim:/RGB_Generator/RGB 1111 0
+force -freeze sim:/RGB_Generator/H_Display 0 0
+force -freeze sim:/RGB_Generator/V_Display 0 0
+run 100ps
+force -freeze sim:/RGB_Generator/H_Display 1 0
+force -freeze sim:/RGB_Generator/V_Display 0 0
+run 100ps
+force -freeze sim:/RGB_Generator/H_Display 0 0
+force -freeze sim:/RGB_Generator/V_Display 1 0
+run 100ps
+force -freeze sim:/RGB_Generator/H_Display 1 0
+force -freeze sim:/RGB_Generator/V_Display 1 0
+run 100ps
+quit -sim
+# End time: 23:09:24 on Aug 14,2020, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 0
+# Load canceled
+# Load canceled
+vsim work.VGA_ROM_Module
+# vsim work.VGA_ROM_Module 
+# Start time: 23:10:31 on Aug 14,2020
+# Loading work.VGA_ROM_Module
+add wave *
+force -freeze sim:/VGA_ROM_Module/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_ROM_Module/address 00000000 0
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+vsim work.VGA_ROM_Module
+# End time: 23:12:26 on Aug 14,2020, Elapsed time: 0:01:55
+# Errors: 0, Warnings: 0
+# vsim work.VGA_ROM_Module 
+# Start time: 23:12:27 on Aug 14,2020
+# Loading work.VGA_ROM_Module
+add wave *
+force -freeze sim:/VGA_ROM_Module/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/VGA_ROM_Module/address 00000000 0
+run 100ps
+force -freeze sim:/VGA_ROM_Module/address 00000001 0
+run 100ps
+force -freeze sim:/VGA_ROM_Module/address 00000010 0
+run 100ps
+force -freeze sim:/VGA_ROM_Module/address 00000011 0
+run 100ps
+quit -sim
+# End time: 23:16:43 on Aug 14,2020, Elapsed time: 0:04:16
+# Errors: 0, Warnings: 0
+vsim work.VGA_Sprite_Memory_Processor
+# vsim work.VGA_Sprite_Memory_Processor 
+# Start time: 23:16:56 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_Sprite_Memory_Processor
+add wave *
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000000 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000000 0
+run 100 ps
+quit -sim
+vsim work.VGA_Sprite_Memory_Processor
+# End time: 23:19:18 on Aug 14,2020, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 0
+# vsim work.VGA_Sprite_Memory_Processor 
+# Start time: 23:19:18 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.VGA_Sprite_Memory_Processor
+add wave *
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000000 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000000 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000001 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000000 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000001 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000001 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000010 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000000 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000010 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000010 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000011 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000010 0
+run 100 ps
+force -freeze sim:/VGA_Sprite_Memory_Processor/Row 0000000011 0
+force -freeze sim:/VGA_Sprite_Memory_Processor/Col 0000000011 0
+run 100 ps
+quit -sim
+# End time: 23:21:34 on Aug 14,2020, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0
+vsim work.VGA_ROM_Module
+# vsim work.VGA_ROM_Module 
+# Start time: 23:21:55 on Aug 14,2020
+# Loading work.VGA_ROM_Module
+quit -sim
+# End time: 23:22:07 on Aug 14,2020, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+vsim work.Seven_Segment_Display
+# vsim work.Seven_Segment_Display 
+# Start time: 23:22:23 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.Seven_Segment_Display
+quit -sim
+vsim work.Seven_Segment_Display
+# End time: 23:23:14 on Aug 14,2020, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+# vsim work.Seven_Segment_Display 
+# Start time: 23:23:14 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.Seven_Segment_Display
+add wave *
+force -freeze sim:/Seven_Segment_Display/d 0000 0
+quit -sim
+vsim work.Seven_Segment_Display
+# End time: 23:24:52 on Aug 14,2020, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 0
+# vsim work.Seven_Segment_Display 
+# Start time: 23:24:52 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.Seven_Segment_Display
+add wave *
+force -freeze sim:/Seven_Segment_Display/d 0000 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0001 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0010 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0011 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0100 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0101 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0110 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 0111 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1000 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1001 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1010 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1011 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1100 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1101 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1110 0
+run 100ps
+force -freeze sim:/Seven_Segment_Display/d 1111 0
+run 100ps
+quit -sim
+# End time: 23:26:17 on Aug 14,2020, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
+vsim work.NES_Reader
+# vsim work.NES_Reader 
+# Start time: 23:27:09 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Reader
+# Loading work.NES_Counter
+# Loading work.NES_Clock_State_Decoder
+# Loading work.NES_Latch_State_Decoder
+# Loading work.NES_Data_Receiver_Decoder
+quit -sim
+vsim work.NES_Reader
+# End time: 23:27:25 on Aug 14,2020, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim work.NES_Reader 
+# Start time: 23:27:25 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Reader
+# Loading work.NES_Counter
+# Loading work.NES_Clock_State_Decoder
+# Loading work.NES_Latch_State_Decoder
+# Loading work.NES_Data_Receiver_Decoder
+add wave *
+force -freeze sim:/NES_Reader/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Reader/reset_n 0 0
+force -freeze sim:/NES_Reader/dataYellow 1 0, 0 {5 ps} -r 10
+run
+force -freeze sim:/NES_Reader/dataYellow 1 0, 0 {500 ps} -r 1000
+quit -sim
+vsim work.NES_Reader
+# End time: 23:30:15 on Aug 14,2020, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 0
+# vsim work.NES_Reader 
+# Start time: 23:30:15 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Reader
+# Loading work.NES_Counter
+# Loading work.NES_Clock_State_Decoder
+# Loading work.NES_Latch_State_Decoder
+# Loading work.NES_Data_Receiver_Decoder
+add wave *
+force -freeze sim:/NES_Reader/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Reader/reset_n 0 0
+force -freeze sim:/NES_Reader/dataYellow 1 0, 0 {500 ps} -r 1000
+run 100ps
+force -freeze sim:/NES_Reader/reset_n 1 0
+run 1ns
+quit -sim
+# End time: 23:32:29 on Aug 14,2020, Elapsed time: 0:02:14
+# Errors: 0, Warnings: 0
+vsim work.NES_Data_Receiver_Decoder
+# vsim work.NES_Data_Receiver_Decoder 
+# Start time: 23:32:45 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Data_Receiver_Decoder
+quit -sim
+vsim work.NES_Data_Receiver_Decoder
+# End time: 23:33:31 on Aug 14,2020, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
+# vsim work.NES_Data_Receiver_Decoder 
+# Start time: 23:33:31 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Data_Receiver_Decoder
+add wave *
+
+force -freeze sim:/NES_Data_Receiver_Decoder/dataYellow 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Data_Receiver_Decoder/reset_n 0 0
+quit -sim
+vsim work.NES_Data_Receiver_Decoder
+# End time: 23:35:00 on Aug 14,2020, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# vsim work.NES_Data_Receiver_Decoder 
+# Start time: 23:35:00 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Data_Receiver_Decoder
+add wave *
+force -freeze sim:/NES_Data_Receiver_Decoder/dataYellow 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Data_Receiver_Decoder/reset_n 0 0
+run 100ps
+force -freeze sim:/NES_Data_Receiver_Decoder/reset_n 1 0
+run 1ns
+force -freeze sim:/NES_Data_Receiver_Decoder/controllerState 0000 0
+quit -sim
+vsim work.NES_Data_Receiver_Decoder
+# End time: 23:38:18 on Aug 14,2020, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 0
+# vsim work.NES_Data_Receiver_Decoder 
+# Start time: 23:38:18 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Data_Receiver_Decoder
+add wave *
+force -freeze sim:/NES_Data_Receiver_Decoder/dataYellow 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Data_Receiver_Decoder/controllerState 0000 0
+force -freeze sim:/NES_Data_Receiver_Decoder/reset_n 0 0
+run 100ps
+force -freeze sim:/NES_Data_Receiver_Decoder/reset_n 1 0
+run 100ps
+force -freeze sim:/NES_Data_Receiver_Decoder/controllerState 0001 0
+run 100ps
+force -freeze sim:/NES_Data_Receiver_Decoder/controllerState 0010 0
+run 100ps
+force -freeze sim:/NES_Data_Receiver_Decoder/controllerState 0011 0
+run 100ps
+quit -sim
+# End time: 23:42:22 on Aug 14,2020, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 0
+vsim work.NES_Counter
+# vsim work.NES_Counter 
+# Start time: 23:42:24 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Counter
+add wave *
+force -freeze sim:/NES_Counter/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Counter/reset_n 0 0
+quit -sim
+vsim work.NES_Counter
+# End time: 23:43:47 on Aug 14,2020, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
+# vsim work.NES_Counter 
+# Start time: 23:43:47 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Counter
+add wave *
+force -freeze sim:/NES_Counter/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Counter/reset_n 0 0
+run 100ps
+force -freeze sim:/NES_Counter/reset_n 1 0
+run 1us
+quit -sim
+vsim work.NES_Counter
+# End time: 23:44:06 on Aug 14,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+# vsim work.NES_Counter 
+# Start time: 23:44:06 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Counter
+add wave *
+force -freeze sim:/NES_Counter/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/NES_Counter/reset_n 0 0
+run 100ps
+force -freeze sim:/NES_Counter/reset_n 1 0
+run 1ns
+quit -sim
+# End time: 23:45:34 on Aug 14,2020, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
+vsim work.NES_Clock_State_Decoder
+# vsim work.NES_Clock_State_Decoder 
+# Start time: 23:45:40 on Aug 14,2020
+# Loading sv_std.std
+# Loading work.NES_Clock_State_Decoder
+add wave *
