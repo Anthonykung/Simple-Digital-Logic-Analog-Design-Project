@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "h_sync",
+					"strict" : false
+				},
+				{
+					"name" : "v_sync",
+					"strict" : false
+				},
+				{
+					"name" : "blue_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "blue_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "blue_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "blue_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "green_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "green_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "green_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "green_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "red_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "red_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "red_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "red_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "Select",
+					"strict" : false
+				},
+				{
+					"name" : "Start",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
+					"name" : "Down",
+					"strict" : false
+				},
+				{
+					"name" : "Up",
+					"strict" : false
+				},
+				{
+					"name" : "Left",
+					"strict" : false
+				},
+				{
+					"name" : "Right",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

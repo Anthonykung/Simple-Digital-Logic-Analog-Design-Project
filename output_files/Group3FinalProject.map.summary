@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Aug 14 12:03:32 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Group3FinalProject
+Top-level Entity Name : VGA_Display_Module
+Family : MAX 10
+Total logic elements : 184
+    Total combinational functions : 184
+    Dedicated logic registers : 23
+Total registers : 23
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 3,072
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

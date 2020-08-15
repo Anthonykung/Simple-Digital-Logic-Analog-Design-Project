@@ -1,0 +1,402 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 80 40 248 56)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Clock_25MHz" (rect 5 0 72 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 80 96 248 112)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "reset_n" (rect 5 0 40 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 488 208 664 224)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "HSYNC" (rect 90 0 130 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 488 384 664 400)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "VSYNC" (rect 90 0 128 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 712 648 888 664)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "V_Display" (rect 90 0 138 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 704 512 880 528)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "H_Display" (rect 90 0 141 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 712 568 894 584)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Display_Col[9..0]" (rect 90 0 176 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 712 712 894 728)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Display_Row[9..0]" (rect 90 0 176 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 240 168 424 248)
+	(text "HSYNC" (rect 5 0 45 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 27 46 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "totalCounts[9..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "totalCounts[9..0]" (rect 94 27 176 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "out_clock" (rect 0 0 47 12)(font "Arial" ))
+		(text "out_clock" (rect 124 43 171 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
+)
+(symbol
+	(rect 248 344 432 424)
+	(text "VSYNC" (rect 5 0 43 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 27 46 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "totalCounts[9..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "totalCounts[9..0]" (rect 94 27 176 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "out_clock" (rect 0 0 47 12)(font "Arial" ))
+		(text "out_clock" (rect 124 43 171 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 64))
+	)
+)
+(symbol
+	(rect 256 488 488 568)
+	(text "H_Display" (rect 5 0 56 12)(font "Arial" ))
+	(text "inst3" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "H_Counts[9..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "H_Counts[9..0]" (rect 21 27 96 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "HSYNC" (rect 0 0 40 12)(font "Arial" ))
+		(text "HSYNC" (rect 21 43 61 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "display" (rect 0 0 35 12)(font "Arial" ))
+		(text "display" (rect 182 27 217 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "Display_Col[9..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "Display_Col[9..0]" (rect 139 43 225 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 64))
+	)
+)
+(symbol
+	(rect 256 624 496 704)
+	(text "V_Display" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst4" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "V_Counts[9..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "V_Counts[9..0]" (rect 21 27 95 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "VSYNC" (rect 0 0 38 12)(font "Arial" ))
+		(text "VSYNC" (rect 21 43 59 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "display" (rect 0 0 35 12)(font "Arial" ))
+		(text "display" (rect 190 27 225 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "Display_Row[9..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "Display_Row[9..0]" (rect 143 43 233 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 64))
+	)
+)
+(connector
+	(text "Clock_25MHz" (rect 258 32 324 49)(font "Intel Clear" ))
+	(pt 248 48)
+	(pt 424 48)
+)
+(connector
+	(text "HSYNC" (rect 82 360 116 377)(font "Intel Clear" ))
+	(pt 72 376)
+	(pt 248 376)
+)
+(connector
+	(text "Clock_25MHz" (rect 74 184 140 201)(font "Intel Clear" ))
+	(pt 64 200)
+	(pt 240 200)
+)
+(connector
+	(text "V_Counts[9..0]" (rect 186 640 255 657)(font "Intel Clear" ))
+	(pt 176 656)
+	(pt 256 656)
+	(bus)
+)
+(connector
+	(text "H_Counts[9..0]" (rect 182 504 251 521)(font "Intel Clear" ))
+	(pt 256 520)
+	(pt 174 520)
+	(bus)
+)
+(connector
+	(text "reset_n" (rect 258 88 293 105)(font "Intel Clear" ))
+	(pt 248 104)
+	(pt 424 104)
+)
+(connector
+	(text "VSYNC" (rect 378 376 412 393)(font "Intel Clear" ))
+	(pt 432 392)
+	(pt 488 392)
+)
+(connector
+	(text "HSYNC" (rect 378 200 412 217)(font "Intel Clear" ))
+	(pt 488 216)
+	(pt 424 216)
+)
+(connector
+	(text "H_Counts[9..0]" (rect 432 184 501 201)(font "Intel Clear" ))
+	(pt 506 200)
+	(pt 424 200)
+	(bus)
+)
+(connector
+	(text "V_Counts[9..0]" (rect 442 360 511 377)(font "Intel Clear" ))
+	(pt 432 376)
+	(pt 512 376)
+	(bus)
+)
+(connector
+	(text "reset_n" (rect 74 200 109 217)(font "Intel Clear" ))
+	(pt 64 216)
+	(pt 240 216)
+)
+(connector
+	(text "reset_n" (rect 82 376 117 393)(font "Intel Clear" ))
+	(pt 72 392)
+	(pt 248 392)
+)
+(connector
+	(text "HSYNC" (rect 128 520 162 537)(font "Intel Clear" ))
+	(pt 176 536)
+	(pt 256 536)
+)
+(connector
+	(text "VSYNC" (rect 120 656 154 673)(font "Intel Clear" ))
+	(pt 256 672)
+	(pt 174 672)
+)
+(connector
+	(text "V_Display" (rect 506 640 554 657)(font "Intel Clear" ))
+	(pt 496 656)
+	(pt 712 656)
+)
+(connector
+	(text "H_Display" (rect 498 504 546 521)(font "Intel Clear" ))
+	(pt 488 520)
+	(pt 704 520)
+)
+(connector
+	(text "Display_Col[9..0]" (rect 640 560 721 577)(font "Intel Clear" ))
+	(pt 632 576)
+	(pt 712 576)
+	(bus)
+)
+(connector
+	(text "Display_Col[9..0]" (rect 496 520 577 537)(font "Intel Clear" ))
+	(pt 488 536)
+	(pt 568 536)
+	(bus)
+)
+(connector
+	(text "Display_Row[9..0]" (rect 642 704 728 721)(font "Intel Clear" ))
+	(pt 632 720)
+	(pt 712 720)
+	(bus)
+)
+(connector
+	(text "Display_Row[9..0]" (rect 506 656 592 673)(font "Intel Clear" ))
+	(pt 496 672)
+	(pt 576 672)
+	(bus)
+)

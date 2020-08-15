@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri Aug 14 12:03:45 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Group3FinalProject
+Top-level Entity Name : VGA_Display_Module
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 186 / 49,760 ( < 1 % )
+    Total combinational functions : 185 / 49,760 ( < 1 % )
+    Dedicated logic registers : 23 / 49,760 ( < 1 % )
+Total registers : 23
+Total pins : 26 / 360 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 3,072 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
