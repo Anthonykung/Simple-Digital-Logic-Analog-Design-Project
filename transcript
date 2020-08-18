@@ -940,3 +940,5 @@ vsim work.NES_Clock_State_Decoder
 # Loading sv_std.std
 # Loading work.NES_Clock_State_Decoder
 add wave *
+# End time: 00:23:58 on Aug 15,2020, Elapsed time: 0:38:18
+# Errors: 0, Warnings: 0

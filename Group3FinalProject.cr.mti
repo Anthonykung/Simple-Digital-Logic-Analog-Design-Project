@@ -1,0 +1,140 @@
+{O:/ECE 271/Final Project Group 3/VGA HSYNC V3.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA HSYNC V3.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module HSYNC
+
+Top level modules:
+	HSYNC
+
+} {} {}} {O:/ECE 271/Final Project Group 3/x2 Clock Divider.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/x2 Clock Divider.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module x2_Clock_Divider
+
+Top level modules:
+	x2_Clock_Divider
+
+} {} {}} {O:/ECE 271/Final Project Group 3/Single 7 Segment Display Module.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/Single 7 Segment Display Module.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Seven_Segment_Display
+
+Top level modules:
+	Seven_Segment_Display
+
+} {} {}} {O:/ECE 271/Final Project Group 3/NES Reader.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/NES Reader.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module NesReader
+-- Compiling module Counter4
+-- Compiling module NesLatchStateDecoder
+-- Compiling module NesClockStateDecoder
+-- Compiling module NesDataReceiverDecoder
+
+Top level modules:
+	NesReader
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA V Display V2.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA V Display V2.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module V_Display
+
+Top level modules:
+	V_Display
+
+} {} {}} {O:/ECE 271/Final Project Group 3/RGB Generator.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/RGB Generator.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RGB_Generator
+
+Top level modules:
+	RGB_Generator
+
+} {} {}} {O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv} {0 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(10.0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(10.1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(10.2): Syntax error, unexpected non-printable character with the hex value '0x8b'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(16.0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(16.1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(16.2): Syntax error, unexpected non-printable character with the hex value '0x8b'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(39.0): Syntax error, unexpected non-printable character with the hex value '0xe2'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(39.1): Syntax error, unexpected non-printable character with the hex value '0x80'.
+** Error: (vlog-13067) O:/ECE 271/Final Project Group 3/Single 7 Segment Display.sv(39.2): Syntax error, unexpected non-printable character with the hex value '0x8b'.
+
+} {3.0 12.0} {}} {O:/ECE 271/Final Project Group 3/VGA_SYNC_Module.v} {1 {vlog -work work -stats=none {O:/ECE 271/Final Project Group 3/VGA_SYNC_Module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_SYNC_Module
+
+Top level modules:
+	VGA_SYNC_Module
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA H Display V2.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA H Display V2.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module H_Display
+
+Top level modules:
+	H_Display
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA_Display_Module.v} {1 {vlog -work work -stats=none {O:/ECE 271/Final Project Group 3/VGA_Display_Module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_Display_Module
+
+Top level modules:
+	VGA_Display_Module
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA_ROM_Module.v} {1 {vlog -work work -stats=none {O:/ECE 271/Final Project Group 3/VGA_ROM_Module.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_ROM_Module
+
+Top level modules:
+	VGA_ROM_Module
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA Sprite Memory Processor.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA Sprite Memory Processor.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_Sprite_Memory_Processor
+
+Top level modules:
+	VGA_Sprite_Memory_Processor
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA RGB Decoder.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA RGB Decoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RGB_Decoder
+
+Top level modules:
+	RGB_Decoder
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA SNES Movement Decoder.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA SNES Movement Decoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_SNES_Movement_Decoder
+
+Top level modules:
+	VGA_SNES_Movement_Decoder
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA_ROM_Module_bb.v} {1 {vlog -work work -stats=none {O:/ECE 271/Final Project Group 3/VGA_ROM_Module_bb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_ROM_Module
+
+Top level modules:
+	VGA_ROM_Module
+
+} {} {}} {O:/ECE 271/Final Project Group 3/NES Controller Module.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/NES Controller Module.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module NES_Reader
+-- Compiling module NES_Counter
+-- Compiling module NES_Latch_State_Decoder
+-- Compiling module NES_Clock_State_Decoder
+-- Compiling module NES_Data_Receiver_Decoder
+
+Top level modules:
+	NES_Reader
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA SNES Button Decoder.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA SNES Button Decoder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VGA_SNES_Button_Decoder
+
+Top level modules:
+	VGA_SNES_Button_Decoder
+
+} {} {}} {O:/ECE 271/Final Project Group 3/VGA VSYNC V3.sv} {1 {vlog -work work -sv -stats=none {O:/ECE 271/Final Project Group 3/VGA VSYNC V3.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module VSYNC
+
+Top level modules:
+	VSYNC
+
+} {} {}}
